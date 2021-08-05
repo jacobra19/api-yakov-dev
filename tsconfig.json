@@ -3,7 +3,7 @@
         "target": "ESNext",
         "module": "ES6",
         "rootDir": "./",
-        "outDir": "./build",
+        "outDir": "./public",
         "esModuleInterop": true,
         "strict": true
     }
