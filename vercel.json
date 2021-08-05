@@ -1,0 +1,9 @@
+{
+    "public": false,
+    "builds": [
+        {
+            "src": "./public/index.js",
+            "use": "@vercel/node"
+        }
+    ]
+}
