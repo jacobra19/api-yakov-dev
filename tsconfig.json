@@ -3,7 +3,7 @@
         "target": "ESNext",
         "module": "CommonJS",
         "rootDir": "./",
-        "outDir": "./public",
+        "outDir": "./build",
         "esModuleInterop": true,
         "moduleResolution": "node"
     }
