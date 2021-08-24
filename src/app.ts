@@ -1,5 +1,7 @@
-import express from 'express';
-import {getComics} from './routes/comics/getComics/getComics';
+import express, { Router } from 'express';
+
+import { ComicsRouter } from './routes/comics';
+import { FamilyTreeRouter } from './routes/family-tree';
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -12,8 +14,8 @@ app.get('/portfolio', (req, res) => res.send('Portfolio Page Route'));
 
 app.get('/contact', (req, res) => res.send('Contact Page Route'));
 
-app.get('/comics', getComics);
-
+app.use('/comics', ComicsRouter);
+app.use('/family-tree', FamilyTreeRouter);
 
 app.listen(port, () =>
 	console.log(`Server running on ${port}, http://localhost:${port}`)
