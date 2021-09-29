@@ -1,4 +1,5 @@
 dist
 build
+api
 node_modules
 .vercel
